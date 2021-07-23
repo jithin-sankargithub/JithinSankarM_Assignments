@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+ 
+
+  <bean id="address" class="com.thespringcoreassignment.Address">
+  <property name="street" value ="Beijing"></property>
+  <property name="city" value = "Bosbing"></property>
+  <property name="state" value="Tokyo"></property>
+   <property name="country" value="Japan"></property>
+    <property name="zip" value="87758"></property>
+ 
+  
+    <!-- collaborators and configuration for this bean go here -->
+  </bean>
+
+ 
+
+  <bean id="customer" class ="com.thespringcoreassignment.Customer">
+  
+  <property name="customerId" value ="98"></property>
+   <property name="customerName" value ="Ashik"></property>
+    <property name="customerContact" value ="988474457"></property>
+     <property name="customerAddress" ref="address"></property>
+ 
+    <!-- collaborators and configuration for this bean go here -->
+  </bean>
+
+ 
+
+  <!-- more bean definitions go here -->
+
+ 
+
+</beans>
